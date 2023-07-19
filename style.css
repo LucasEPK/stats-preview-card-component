@@ -1,3 +1,4 @@
+/*-----------------------------------------------MOBILE VERSION----------------------------------------------------*/
 body{
     font-family: 'Inter', sans-serif;
     color: hsl(0, 0%, 100%); /*White*/
@@ -64,4 +65,60 @@ body{
 
 .attribution{
     display: none;
+}
+
+@media(min-width: 800px){
+
+    body{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .card{
+        display: grid;
+        width: 85vw;
+        grid-template-columns: 45vw 40vw;
+
+        margin: 0;
+    }
+
+    .card-img{
+        content: url(images/image-header-desktop.jpg);
+        grid-area: 1/2/2/3;
+        border-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        height: 100%;
+    }
+
+    .card-text{
+        padding: 70px;
+        gap: 1.5rem;
+    }
+
+    .card-title{
+        font-size: 2.4rem;
+        line-height: 1.2;
+        max-width: 17ch;
+        text-align: left;
+    }
+
+    .card-subtitle{
+        font-size: 1rem;
+        max-width: 40ch;
+        text-align: left;
+    }
+
+    .stats{
+        flex-direction: row;
+        gap: 5rem;
+
+        margin-top: 50px;
+    }
+
+    .stats-number{
+        text-align: left;
+    }
 }
